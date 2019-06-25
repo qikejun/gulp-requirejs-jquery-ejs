@@ -1,4 +1,4 @@
-基于tmt-workflow [![Version Number](https://img.shields.io/npm/v/generator-workflow.svg?style=flat)](https://github.com/Tencent/tmt-workflow/ 'Version Number')的
+基于tmt-workflow [![Version Number](https://img.shields.io/npm/v/generator-workflow.svg?style=flat)](https://github.com/Tencent/tmt-workflow/ 'Version Number')
 
 [![Build Status](https://api.travis-ci.org/Tencent/tmt-workflow.svg)](https://travis-ci.org/Tencent/tmt-workflow 'Build Status')
 [![Win Build status](https://img.shields.io/appveyor/ci/littledu/tmt-workflow.svg?label=Win%20build&style=flat)](https://ci.appveyor.com/project/littledu/tmt-workflow)
