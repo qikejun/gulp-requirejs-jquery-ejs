@@ -1,0 +1,105 @@
+.shortcut {
+  min-width: 1200px;
+  height: 30px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #d6d6d6;
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .left,
+  .right {
+    li+li {
+
+      a,
+      .text {
+        border-left: 1px solid #e6e6e6
+      }
+    }
+
+    li {
+      float: left;
+      height: 30px;
+      font-size: 12px;
+
+      a,
+      .text {
+        margin-top: 7px;
+        display: inline-block;
+        height: 16px;
+        line-height: 16px;
+        padding: 0 15px;
+        color: #666;
+      }
+
+      a:hover {
+        color: #3970E1;
+      }
+
+      .hover-box {
+        position: relative;
+
+        &:hover {
+          .phone-box {
+            display: inline-block;
+          }
+        }
+
+        .phone-box {
+          display: none;
+          position: absolute;
+          z-index: 99;
+          top: 23px;
+          left: -30px;
+          width: 160px;
+          border: 1px solid #dbdbdb;
+          border-top: none;
+          margin-top: 1px;
+          text-align: center;
+          background-color: #fff;
+
+          .title {
+            font-size: 14px;
+            color: #333;
+          }
+
+          .img-box {
+            display: inline-block;
+            margin: 10px auto;
+
+            img {
+              width: 107px;
+              height: 107px;
+            }
+          }
+        }
+      }
+
+      .icon {
+        vertical-align: top;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-right: 4px;
+        background-repeat: no-repeat
+      }
+
+      .star {
+        background-image: url(./../slice/icon-star.png);
+      }
+
+      .phone {
+        background-image: url(./../slice/icon-phone.png)
+      }
+
+      .orange {
+        color: #ff6e40;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<script id="shortcut" type="text/html">
+    <div class="shortcut">
+        <div class="inner clearfix">
+            <ul class="left clearfix">
+                {{each left}}
+                {{if $value.href}}
+                <li><a href="{{origin+$value.href}}">{{$value.text}}</a></li>
+                {{else}}
+                <li><span class="text">{{$value.text}}</span></li>
+                {{/if}}
+                {{/each}}
+            </ul>
+            <ul class="right clearfix">
+                {{each right}}
+                {{if $value.href}}
+                <li><a href="{{origin+$value.href}}">{{if $value.icon}}<i class="icon {{$value.icon}}"></i>{{/if}}{{$value.text}}{{if $value.sign}}<span class="orange">{{$value.sign}}</span>{{/if}}</a></li>
+                {{else}}
+                <li><span class="text {{$value.btnClass}}">{{if $value.icon}}<i class="icon {{$value.icon}}"></i>{{/if}}{{$value.text}}{{if $value.sign}}<span class="orange">{{$value.sign}}</span>{{/if}}</span></li>
+                {{/if}}
+                {{/each}}
+                <!--<li><a href="">首页</a></li>-->
+                <!--<li><a href=""><i class="icon"></i>购物车<span class="orange">（1）</span></a></li>-->
+                <!--<li><a href="">会员中心</a></li>-->
+                <!--<li><a href="">帮助中心</a></li>-->
+                <li>
+                    <span class="text hover-box"><i class="icon phone"></i>手机APP
+                    <div class="phone-box">
+                        <span class="title">
+                            <span class="text-0080cb">手机APP</span>客户端
+                        </span>
+                        <span class="img-box">
+                            <img src="../../img/app-qr-code.png">
+                        </span>
+				    </div>
+                    </span></li>
+                <li><span class="text">客服电话：<span class="orange">400 810 8777</span></span></li>
+                <li><span class="text">服务邮箱：<span class="orange">service@eavic.com</span></span></li>
+                <li><span class="text btn-text collect"><i class="icon star"></i>收藏</span></li>
+            </ul>
+        </div>
+    </div>
+</script>

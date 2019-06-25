@@ -1,0 +1,14 @@
+<%- include('../_block/head.ejs',{ title:'首页' , css:['../../css/style-index.css'] }) %>
+<header>
+    <div class="shortcut"></div>
+    <div class="searchbox"></div>
+</header>
+<main>
+    <nav class="navbar"></nav>
+    <div class="slider"></div>
+</main>
+<%- include('../component/shortcut.ejs') %>
+<%- include('../component/searchBox.ejs') %>
+<%- include('../component/navBar.ejs') %>
+<%- include('../component/slider.ejs') %>
+<%- include('../_block/footer.ejs',{ js:['portal/index.js'], path:'./../../js/' }) %>

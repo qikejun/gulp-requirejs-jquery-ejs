@@ -1,0 +1,22 @@
+<script id="slider" type="text/html">
+    <div class="slider">
+        <div id="img-box" class="img-box">
+            {{each $data}}
+                <p class="item" style="{{$value.imgUrl}}"><a href={{$value.href?$value.href:'javascript:void(0);'}} target="_blank"></a></p>
+            {{/each}}
+        </div>
+        <div class="btn-box">
+            <ul id="btn-list" class="btn-list">
+                {{if $data.length>1}}
+                {{each $data}}
+                {{if $index==0}}
+                <li class="active"></li>
+                {{else}}
+                <li></li>
+                {{/if}}
+                {{/each}}
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</script>

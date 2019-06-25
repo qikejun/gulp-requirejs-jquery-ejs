@@ -1,0 +1,25 @@
+<script id="searchbox" type="text/html">
+    <div class="search-box inner clearfix">
+        <a href="/rest/index" class="logo"><img src="./../../img/logo.png" alt=""></a>
+        <div class="search-box">
+            <ul class="tap-switch clearfix">
+                <li class="active" data-attr={"placeholder":"请输入商品名称、商品分类、规格描述等","name":"goods"}>商品</li>
+                <li data-attr={"placeholder":"请输入供应商名称、供应商编码等","name":"supplier"}>供应商</li>
+                <li data-attr={"placeholder":"请输入需求名称、需求分类、规格描述等","name":"demand"}>需求</li>
+            </ul>
+            <div class="search-input">
+                <!--如果是搜索商品则可进行选择-->
+                <input type="text" id="keyword" class="input-text" placeholder="请输入商品名称、商品分类、规格描述等" value="">
+                <!--其他情况用这个input类名-->
+                <button type="button" class="search-btn btn" id="searchBtn">搜索</button>
+            </div>
+        </div>
+        <div class="login-box clearfix">
+            <!--<img src="http://css.170tao.net//new-images/portal/index1/icon-login.png" class="icon fl">-->
+            <a class="login btn" href="http://www.170tao.net/caslogin">登录</a>
+            <a class="register btn" href="http://www.170tao.net/rest/supplierInfo/toRegister">免费注册</a>
+            <!--<a class="login-after" href="http://pur.170tao.net/rest/purchaserMember/index">72222222</a>-->
+            <!--<a class="logout" href="http://www.170tao.net/casLogout">退出登录</a>-->
+        </div>
+    </div>
+</script>

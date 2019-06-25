@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+matrix:
+  include:
+    - node_js: "10"
+    - node_js: "9"
+      os: osx
+    - node_js: "8"
+      os: osx
+    - node_js: "7"
+      os: linux
+    - node_js: "6"
+      os: linux
+    - node_js: "5"
+      os: linux
+
+before_script:
+  - npm install -g gulp
+  - cd project
+
+script: gulp build_dist

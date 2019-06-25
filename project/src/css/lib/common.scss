@@ -1,0 +1,16 @@
+.inner{
+  width: 1200px;
+  margin: 0 auto;
+}
+//文字hover
+.hover:hover{
+  color: #3970E1;
+}
+.btn-text{
+  cursor: pointer;
+}
+//按钮hover
+.btn:hover{
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}

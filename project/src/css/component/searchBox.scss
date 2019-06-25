@@ -1,0 +1,123 @@
+.search-box{
+  .logo{
+    float: left;
+    margin: 15px 0;
+    width: 328px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .tap-switch{
+    li{
+      float: left;
+      line-height: 16px;
+      color: #666;
+      padding: 0 15px;
+      cursor: pointer;
+    }
+    .active,
+    li:hover{
+      color: #3970E1;
+    }
+    li +li {
+      color: #666;
+      border-left: 1px solid #e5e5e5;
+    }
+  }
+  .search-box {
+    float: left;
+    padding: 18px 36px 10px 130px;
+    margin-left: 90px;
+    .search-input {
+      margin: 5px 0;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      .input-text{
+        width: 400px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 16px;
+        border: 1px solid #C0C0C0;
+        border-radius: 4px;
+      }
+    .search-btn{
+      width: 60px;
+      height: 30px;
+      line-height: 30px;
+      background-color: #3970E1;
+      text-align: center;
+      color: #fff;
+      margin-left: -3px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 0;
+      cursor: pointer;
+    }
+    }
+  }
+  .login-box{
+    float: left;
+    position: relative;
+    margin-top: 38px;
+    width: 216px;
+    &:hover a.logout {
+      position: absolute;
+      display: inline-block;
+      bottom: -40px;
+      left: 0;
+    }
+    .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+    }
+    a.login {
+      float: left;
+      margin-left: 10px;
+      height: 32px;
+      line-height: 32px;
+      background: #3970E1;
+      border-radius: 4px;
+      width: 90px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+    a.register {
+      float: left;
+      margin-left: 22px;
+      line-height: 32px;
+      font-size: 16px;
+      color: #3970E1;
+      cursor: pointer;
+    }
+    a.login-after {
+      display: inline-block;
+      width: 150px;
+      height: 34px;
+      margin-left: 12px;
+      font-size: 16px;
+      color: #4A4A4A;
+      line-height: 34px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    a.logout {
+      display: none;
+      width: 80px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #6E6E6E;
+      cursor: pointer;
+      background-color: #fff;
+      box-shadow: 0 2px 4px 0 #000000;
+    }
+  }
+}

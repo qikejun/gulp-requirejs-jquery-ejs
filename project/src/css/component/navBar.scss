@@ -1,0 +1,33 @@
+nav{
+  background: #3970E1;
+  min-width: 1200px;
+  .nav-list{
+    li{
+      float: left;
+      height: 40px;
+      font-size: 16px;
+      line-height: 40px;
+      text-align: center;
+      a {
+        display: inline-block;
+        padding: 0 10px;
+        color: #fff;
+        height: 100%;
+        &:hover {
+          color: #F8E71C;
+        }
+      }
+      .icon {
+        display: inline-block;
+        background-color: #fff;
+        margin: 5px -4px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+      }
+    }
+    li + li{
+      margin-left: 50px;
+    }
+  }
+}

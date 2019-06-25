@@ -1,0 +1,41 @@
+<script src="../../js/lib/require.min.js"></script>
+<script>
+    // var timeStamp = new Date().getTime();
+    require.config({
+        baseUrl:'<%=path %>',
+        waitSeconds:0,
+        urlArgs: "v=" +  (new Date()).getTime(),
+        paths:{
+            //第三方插件库
+            "jquery":"lib/jquery",
+            "css":'lib/css.min',
+            "artTemplate":"lib/template-web",
+            "layer":"lib/layer/layer",
+
+            //自定义库
+            "util":"component/util",
+            "shortcut":"component/shortcut",
+            "searchBox":"component/searchBox",
+            "navBar":"component/navBar",
+            "slider":"component/slider",
+        },
+        map: {
+            '*': {
+                css: 'lib/css'
+            }
+        },
+        shim: {
+            'layer': {
+                deps: ['css!/css/lib-layer.css', 'jquery'],
+                exports: "layer"
+            }
+        }
+    });
+</script>
+<% if(js){ %>
+<%  js.forEach(function(src){ %>
+<script src="<%=path  %><%=src  %>"></script>
+<% }); %>
+<% }  %>
+</body>
+</html>
